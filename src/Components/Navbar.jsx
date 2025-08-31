@@ -41,10 +41,10 @@ const navItems = [
 
   return (
     <>
-   <nav  id='Navbar'>
+   <nav  id='Navbar ' className=' hidden lg:block '>
     <div className="container">
-      <div className="navRow flex justify-between items-center py-8 ">
-        <div className="navLogo w-[154px] h-[40px]">
+      <div className="navRow flex justify-between items-center pt-8  ">
+        <div className="navLogo w-[154px] h-[40px] ">
           <img src={logo} alt="logo" />
         </div>
         <div className="navItems flex gap-9  items-center ">
