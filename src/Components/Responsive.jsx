@@ -20,6 +20,7 @@ const Responsive = () => {
     navContent: 'Contact Us',
     navLink: '/'
   }
+
 ]
   return (
     <>
@@ -38,7 +39,7 @@ const Responsive = () => {
         </div>
 
         <div className="custom w-50 h-full bg-primary absolute top-0 right-0">
-          <div className="navitems flex flex-col gap-3  items-center justify-center h-screen">
+          <div className="navitems flex flex-col gap-3  items-center justify-center h-[500px]">
             {
               navItems.map((item, k)=>(
             <ul key={k}>
@@ -49,7 +50,7 @@ const Responsive = () => {
 
               ))
             }
-            <button className=' w-[140px] h-[47px] rounded-[23px] bg-black text-white text-lg normal font-dm hover:bg-black hover:text-primary transition duration-700 inline-block' >Get in touch</button>
+            <Link className=' w-[130px] h-[40px] rounded-[10px] bg-black text-white text-sm normal font-dm flex justify-center items-center' >Get in touch</Link>
           </div>
         </div>
       </nav>
