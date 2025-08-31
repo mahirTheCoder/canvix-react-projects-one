@@ -9,7 +9,17 @@ const navItems = [
   },
   {
     navContent: 'About',
-    navLink: '/'
+    navLink: '/',
+    dropDown: [
+      {
+        dropDownContent: 'Our Team',
+        dropDownLink: '/'
+      },
+      {
+        dropDownContent: 'Our Story',
+        dropDownLink: '/'
+      }
+    ]
   },
   {
     navContent: 'Contact Us',
@@ -21,14 +31,31 @@ const navItems = [
     <>
    <nav  id='Navbar'>
     <div className="container">
-      <div className="navRow flex justify-between items-center py-9 ">
+      <div className="navRow flex justify-between items-center py-8 ">
         <div className="navLogo w-[154px] h-[40px]">
           <img src={logo} alt="logo" />
         </div>
         <div className="navItems flex gap-9  items-center ">
           {
+            
             navItems.map((item , k) => (
-              <Link key={k} className='text-primary text-base font-dm ' to={item.navLink}>{item.navContent}</Link>
+              <ul key={k}>
+                <li className='relative'>
+                <Link key={k} className='text-primary text-base font-dm ' to={item.navLink}>{item.navContent}</Link>
+
+                {
+                  item.dropDown&&
+                 <div className="dropdown-manu absolute w-[250px] h-auto bg-white rounded-[7px] py-3 pl-4 top-8">
+                  <ul>
+                    <li>
+                      <Link to={'/'}>Phone</Link>
+                    </li>
+                  </ul>
+                 </div>
+
+                }
+                </li>
+              </ul>
 
             ))
           }
