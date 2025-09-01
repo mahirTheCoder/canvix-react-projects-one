@@ -28,7 +28,7 @@ const [shownav, setShowNav] = useState (false);
 
   return (
     <>
-      <nav id="Responsive" className="lg:hidden px-2 py-3">
+      <nav id="Responsive" className="lg:hidden px-2 py-3 absolute top-0 left-0 w-full z-20 ">
         <div className="container">
           <div className="responsiveRow flex items-center justify-between">
             <div className="reslogo ">

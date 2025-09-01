@@ -41,7 +41,7 @@ const navItems = [
 
   return (
     <>
-   <nav  id='Navbar ' className=' hidden lg:block '>
+   <nav  id='Navbar ' className=' hidden lg:block absolute top-0 left-0 w-full z-20'>
     <div className="container">
       <div className="navRow flex justify-between items-center pt-8  ">
         <div className="navLogo w-[154px] h-[40px] ">
