@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use, useState } from "react";
 import { Link } from "react-router";
 import logo from "../assets/images/logo.png";
 import { FaBarsStaggered } from "react-icons/fa6";
@@ -21,7 +21,10 @@ const Responsive = () => {
     navLink: '/'
   }
 
-]
+];
+
+const [shownav, setShowNav] = useState (true);
+
   return (
     <>
       <nav id="Responsive" className="lg:hidden px-2 py-3">
@@ -32,14 +35,17 @@ const Responsive = () => {
                 <img src={logo} alt="logo" />
               </Link>
             </div>
-            <button className="text-white text-2xl">
+            <button onClick={()=>setShowNav(!shownav)} className="text-white text-2xl">
               <FaBarsStaggered />
             </button>
           </div>
         </div>
 
-        <div className="custom w-50 h-full bg-primary absolute top-0 right-0">
-          <div className="navitems flex flex-col gap-3  items-center justify-center h-[500px]">
+       {
+        shownav&&
+
+        <div className={`w-[200px] h-screen bg-white absolute top-0 right-0 flex justify-center items-center`}>
+          <div className="navitems flex flex-col gap-3">
             {
               navItems.map((item, k)=>(
             <ul key={k}>
@@ -53,6 +59,9 @@ const Responsive = () => {
             <Link className=' w-[130px] h-[40px] rounded-[10px] bg-black text-white text-sm normal font-dm flex justify-center items-center' >Get in touch</Link>
           </div>
         </div>
+
+       }
+
       </nav>
     </>
   );
