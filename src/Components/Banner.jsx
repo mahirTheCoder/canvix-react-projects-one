@@ -5,6 +5,7 @@ import bn1 from "../assets/images/bn1.png";
 import bn2 from "../assets/images/bn2.png";
 import bn3 from "../assets/images/bn3.png";
 import bn4 from "../assets/images/bn4.png";
+import Bnaaers from "../assets/images/Banners.png";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 import { Link } from "react-router";
@@ -28,7 +29,7 @@ const Banner = () => {
           <img src={position} alt="positionImg" />
         </div>
         <div className="container text-white">
-          <div className="bannerRow">
+          <div className="bannerRow flex  sm:flex-row flex-col it ">
             <div className="BannerContent">
               <h2 className=" lg:w-[608px] lg:text-[64px] font-semibold font-roboto text-primary text-[31px] lg:pt-[166px] lg:pb-6 pb-3  ">
                 Ready to take your{" "}
@@ -47,13 +48,21 @@ const Banner = () => {
                   Start your Free Trial
                 </Link>
               </div>
-              <h6 className="w-60 lg:text-5  text-sm font-semibold font-roboto text-Brand lg:mt-45 mt-8 pb-3">Trusted by Leading Brands</h6>
-              <div className="bnImg gap-2.5 lg:flex   ">
-                <img className="lg:w-[147px] w-30 h-10 lg:h-[54px]" src={bn1} alt="bn1" />
-                <img className="lg:w-[147px] w-30 h-10 lg:h-[54px]" src={bn2} alt="bn1" />
-                <img className="lg:w-[147px] w-30 h-10 lg:h-[54px]" src={bn3} alt="bn1" />
-                <img className="lg:w-[221px] w-30 h-10 lg:h-[54px]" src={bn4} alt="bn1" />
+              <h6 className="w-60 lg:text-5  text-sm font-semibold font-roboto text-Brand lg:mt-45 mt-8 pb-3">
+                Trusted by Leading Brands
+              </h6>
+              <div className="bnImg lg:gap-2.5 lg:w-[140px] lg:h-[54px] w-19 h-12 flex    ">
+                <img src={bn1} alt="bn1" />
+                <img src={bn2} alt="bn1" />
+                <img src={bn3} alt="bn1" />
+                <img src={bn4} alt="bn1" />
               </div>
+            </div>
+            <div
+              className="BannerImages object-contain
+              w-full lg:pt-20 "
+            >
+              <img src={Bnaaers} alt="bannerImg" />
             </div>
           </div>
         </div>

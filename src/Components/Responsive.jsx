@@ -48,7 +48,8 @@ const [shownav, setShowNav] = useState (false);
         <div  onClick={()=> setShowNav(!shownav)} className="sidetouch w-full h-screen absolute top-0 left-0"></div>
         }
 
-        <div className={`w-[200px] h-screen bg-white absolute top-0 ${shownav? 'right-0': 'right-[-100%]'}  flex justify-center items-center duration-700`}>
+        <div className={`w-[200px] h-screen bg-white fixed
+           top-0 right-0 ${shownav ? "translate-x-0": "translate-x-full"}  flex justify-center items-center duration-700`}>
           <div className="navitems flex flex-col gap-3">
 
             <button onClick={()=> setShowNav(!shownav)}>
