@@ -2,6 +2,7 @@ import React, { use, useState } from "react";
 import { Link } from "react-router";
 import logo from "../assets/images/logo.png";
 import { FaBarsStaggered } from "react-icons/fa6";
+import { GiCrossedAirFlows } from "react-icons/gi";
 
 const Responsive = () => {
 
@@ -23,13 +24,13 @@ const Responsive = () => {
 
 ];
 
-const [shownav, setShowNav] = useState (true);
+const [shownav, setShowNav] = useState (false);
 
   return (
     <>
       <nav id="Responsive" className="lg:hidden px-2 py-3">
         <div className="container">
-          <div className="responsiveRow flex items-center justify-between">
+          <div onClick={()=> setShowNav(!shownav)} className="responsiveRow flex items-center justify-between">
             <div className="reslogo ">
               <Link to={"/"} className="logo inline-block w-28">
                 <img src={logo} alt="logo" />
@@ -41,11 +42,15 @@ const [shownav, setShowNav] = useState (true);
           </div>
         </div>
 
-       {
-        shownav&&
+  
 
-        <div className={`w-[200px] h-screen bg-white absolute top-0 right-0 flex justify-center items-center`}>
+        <div className={`w-[200px] h-screen bg-white absolute top-0 ${shownav? 'right-0': 'right-[-100%]'}  flex justify-center items-center duration-700`}>
           <div className="navitems flex flex-col gap-3">
+
+            <button onClick={()=> setShowNav(!shownav)}>
+            <GiCrossedAirFlows className="absolute top-5 right-7 text-lg text-[#000]" />
+            </button>
+
             {
               navItems.map((item, k)=>(
             <ul key={k}>
@@ -60,7 +65,6 @@ const [shownav, setShowNav] = useState (true);
           </div>
         </div>
 
-       }
 
       </nav>
     </>
