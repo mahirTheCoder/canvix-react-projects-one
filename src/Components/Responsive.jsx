@@ -30,7 +30,7 @@ const [shownav, setShowNav] = useState (false);
     <>
       <nav id="Responsive" className="lg:hidden px-2 py-3">
         <div className="container">
-          <div onClick={()=> setShowNav(!shownav)} className="responsiveRow flex items-center justify-between">
+          <div className="responsiveRow flex items-center justify-between">
             <div className="reslogo ">
               <Link to={"/"} className="logo inline-block w-28">
                 <img src={logo} alt="logo" />
@@ -42,8 +42,18 @@ const [shownav, setShowNav] = useState (false);
           </div>
         </div>
 
-  
+        {
+          shownav&&
 
+        <div  onClick={()=> setShowNav(!shownav)} className="sidetouch w-full h-screen absolute top-0 left-0"></div>
+        }
+
+        {
+          shownav?
+          'overflow-hidden'
+          :
+          ''
+        }
         <div className={`w-[200px] h-screen bg-white absolute top-0 ${shownav? 'right-0': 'right-[-100%]'}  flex justify-center items-center duration-700`}>
           <div className="navitems flex flex-col gap-3">
 
