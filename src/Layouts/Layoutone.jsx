@@ -12,7 +12,6 @@ const Layoutone = () => {
     <Navbar />
     <Responsive />
     <Outlet />
-    <Service/>
     </>
   )
 }
