@@ -1,6 +1,5 @@
 import React from "react";
 import CommonHead from "./CommonHead";
-// import ShowCards from "./ShowCards";
 import Showimg from "../assets/images/show1.png";
 import Showimg2 from "../assets/images/show2.png";
 import Showimg3 from "../assets/images/show3.png";

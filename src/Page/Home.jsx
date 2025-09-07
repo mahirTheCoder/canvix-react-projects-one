@@ -4,6 +4,7 @@ import Service from "../Components/Service";
 import About from "../Components/About";
 import Process from "../Components/process";
 import Showcase from "../Components/Showcase";
+import Slider from "../Components/Slider";
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <About/>
       <Process />
       <Showcase/>
+      <Slider/>
     </>
   );
 };
