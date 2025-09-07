@@ -17,7 +17,7 @@ const Process = () => {
               service2={"Process that moves things forward"}
             />
           </div>
-          <div className="processContent flex lg:justify-between justify-center  flex-wrap mt-[90px] px-3 lg:px-0 mb-[139px]">
+          <div className="processContent flex lg:justify-between justify-center  flex-wrap mt-[90px] px-3 lg:px-0 lg:mb-[139px]">
             <Cardone
               pIcon={<RiLightbulbFlashLine/>}
               pHeader={"Ideate"}

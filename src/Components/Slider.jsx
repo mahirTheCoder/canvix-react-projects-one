@@ -14,7 +14,7 @@ const Slider = () => {
 
   return (
     <>
-      <section id="Slider" className="mt-26">
+      {/* <section id="Slider" className="mt-26">
         <div className="container">
           <div className="sliderRow w-full  h-[482px] bg-primary rounded-[20px] ">
             <div className="sliderContent">
@@ -26,7 +26,7 @@ const Slider = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
