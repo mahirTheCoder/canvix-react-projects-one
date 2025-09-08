@@ -103,13 +103,13 @@ const Footer = () => {
               <h2 className="text-xl font-semibold font-roboto mb-4 text-white ">
                 Subscribe
               </h2>
-              <div className="mail lg:w-[433px] w-[300px] lg:h-[67px] h-[40px] bg-[#fff] lg:rounded-[30px] flex justify-between items-center rounded-md ">
+              <div className="mail lg:w-[433px] w-[300px] lg:h-[67px] h-[45px] bg-[#fff] lg:rounded-[30px] flex justify-between items-center rounded-md ">
                 <input
                   className="ml-5 border-none outline-none "
                   type="text"
                   placeholder="Enter your email here"
                 />
-                <p className="w-[118px] lg:h-[47px] lg:text-base  text-xs h-8 bg-secondary text-primary rounded-2xl flex justify-center items-center mr-3">
+                <p className="w-[118px] lg:h-[47px] lg:text-base  text-xs h-9 bg-secondary text-primary rounded-md flex justify-center items-center mr-3">
                   Subscribe
                 </p>
               </div>
@@ -118,7 +118,7 @@ const Footer = () => {
           <hr className="text-primary mb-7 "  />
           <div className="footer2ndContent flex  gap-5 lg:gap-0 px-3 lg:px-0  lg:justify-between flex-wrap pb-7">
             <div className="copyRight">
-              <h2 className="lg:text-xl text-base font-semibold font-roboto mb-6 text-white">
+              <h2 className="lg:text-xl text-base font-semibold font-roboto mb-2 lg:mb-6 text-white">
                 Copyright by
               </h2>
               <p className="lg:text-base text-xs font-normal font-dm mb-2 lg:mb-5 text-primary">
@@ -126,7 +126,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="copyRight">
-              <h2 className="lg:text-xl text-base font-semibold font-roboto mb-6 text-white">
+              <h2 className="lg:text-xl text-base font-semibold font-roboto mb-2 lg:mb-6 text-white">
                 Contact Us
               </h2>
               <p className="lg:text-base text-xs font-normal font-dm mb-2 lg:mb-5 text-primary">
@@ -134,7 +134,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="copyRight">
-              <h2 className="lg:text-xl text-base font-semibold font-roboto mb-6 text-white">
+              <h2 className="lg:text-xl text-base font-semibold font-roboto mb-2 lg:mb-6 text-white">
                 Address
               </h2>
               <p className="lg:text-base text-xs font-normal font-dm mb-2 lg:mb-5 text-primary">
@@ -142,13 +142,13 @@ const Footer = () => {
               </p>
             </div>
             <div className="socialmediaLogo flex gap-7">
-              <div className="w-12.5 h-12.5 bg-primary rounded-4xl flex justify-center items-center text-3xl ">
+              <div className="lg:w-12.5 lg:h-12.5 w-10 h-10 bg-primary rounded-4xl flex justify-center items-center lg:text-3xl text-2xl ">
                 <CiFacebook />
               </div>
-              <div className="w-12.5 h-12.5 bg-primary rounded-4xl flex justify-center items-center text-3xl ">
+              <div className="lg:w-12.5 lg:h-12.5 w-10 h-10 bg-primary rounded-4xl flex justify-center items-center lg:text-3xl text-2xl ">
                 <FaInstagram />
               </div>
-              <div className="w-12.5 h-12.5 bg-primary rounded-4xl flex justify-center items-center text-3xl ">
+              <div className="lg:w-12.5 lg:h-12.5 w-10 h-10 bg-primary rounded-4xl flex justify-center items-center lg:text-3xl text-2xl  ">
                 <CiLinkedin />
               </div>
             </div>
