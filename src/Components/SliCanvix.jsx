@@ -23,27 +23,89 @@ const SliCanvix = () => {
           <div className="slider-container">
             <Slider {...settings}>
               <div>
-                <div>
-                
+                <div className="sliderImg  ">
+                  <img
+                    className="w-[150px] h-[150px] m-auto mt-11 z-10"
+                    src={sliderImg}
+                    alt="sliderImg"
+                  />
                 </div>
+                <h2 className="lg:w-[1313px] w-[300px] lg:text-[25px] text-sm lg:font-bold font-medium font-roboto  m-auto text-center mt-8.5 ">
+                  “Be genuine in your assessment, and provide constructive
+                  feedback to benefit both potential customers and the company
+                  providing the product or service.”
+                </h2>
+                <h3 className="lg:text-xl text:sm  lg:font-semibold font-medium font-roboto mt-8.5 text-center">
+                  Jacqueline Miller
+                </h3>
+                <p className="lg:text-base text-xs font-normal font-dm text-center">
+                  CEO of an eduport
+                </p>
               </div>
               <div>
-                <h3>2</h3>
+                <div className="sliderImg  ">
+                  <img
+                    className="w-[150px] h-[150px] m-auto mt-11 z-10"
+                    src={sliderImg}
+                    alt="sliderImg"
+                  />
+                </div>
+                <h2 className="lg:w-[1313px] w-[300px] lg:text-[25px] text-sm lg:font-bold font-medium font-roboto  m-auto text-center mt-8.5 ">
+                  “Be genuine in your assessment, and provide constructive
+                  feedback to benefit both potential customers and the company
+                  providing the product or service.”
+                </h2>
+                <h3 className="lg:text-xl text:sm  lg:font-semibold font-medium font-roboto mt-8.5 text-center">
+                  Jacqueline Miller
+                </h3>
+                <p className="lg:text-base text-xs font-normal font-dm text-center">
+                  CEO of an eduport
+                </p>
               </div>
               <div>
-                <h3>3</h3>
+                <div className="sliderImg  ">
+                  <img
+                    className="w-[150px] h-[150px] m-auto mt-11 z-10"
+                    src={sliderImg}
+                    alt="sliderImg"
+                  />
+                </div>
+                <h2 className="lg:w-[1313px] w-[300px] lg:text-[25px] text-sm lg:font-bold font-medium font-roboto  m-auto text-center mt-8.5 ">
+                  “Be genuine in your assessment, and provide constructive
+                  feedback to benefit both potential customers and the company
+                  providing the product or service.”
+                </h2>
+                <h3 className="lg:text-xl text:sm  lg:font-semibold font-medium font-roboto mt-8.5 text-center">
+                  Jacqueline Miller
+                </h3>
+                <p className="lg:text-base text-xs font-normal font-dm text-center">
+                  CEO of an eduport
+                </p>
               </div>
               <div>
-                <h3>4</h3>
-              </div>
-              <div>
-                <h3>5</h3>
+                <div className="sliderImg  ">
+                  <img
+                    className="w-[150px] h-[150px] m-auto mt-11 z-10"
+                    src={sliderImg}
+                    alt="sliderImg"
+                  />
+                </div>
+                <h2 className="lg:w-[1313px] w-[300px] lg:text-[25px] text-sm lg:font-bold font-medium font-roboto  m-auto text-center mt-8.5 ">
+                  “Be genuine in your assessment, and provide constructive
+                  feedback to benefit both potential customers and the company
+                  providing the product or service.”
+                </h2>
+                <h3 className="lg:text-xl text:sm  lg:font-semibold font-medium font-roboto mt-8.5 text-center">
+                  Jacqueline Miller
+                </h3>
+                <p className="lg:text-base text-xs font-normal font-dm text-center">
+                  CEO of an eduport
+                </p>
               </div>
             </Slider>
           </div>
         </div>
       </section>
-
     </>
   );
 };

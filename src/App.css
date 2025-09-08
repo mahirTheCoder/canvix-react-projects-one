@@ -1,37 +1,54 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 
+/* 
 
-
-/* .slick-arrow{
+.slick-arrow{
 font-size: 12px !important;
 
   color: red;
 
-}
-
-.slick-next{
-  position: absolute;
-  top: 0;
-  width: 44px;
-  height: 44px;
-  border: 1px solid black;
-  border-radius: 50%;
-  font-size: 12px !important;
-  padding: 10px;
-  color: aqua;
-}
-
-.slick-next:hover{
-  width: 44px;
-  height: 44px;
-  border: 1px solid black;
-  border-radius: 50%;
-  background: black;
-  font-size: 12px !important;
-  padding: 10px;
-  color: aqua;
 } */
+
+.slick-next {
+  position: absolute;
+  top: 393px;
+  left: 51%;
+  width: 44px;
+  height: 44px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 12px !important;
+  padding: 10px;
+  color: gray;
+  margin-top: 10px;
+  transition: 0.4s linear;
+}
+
+.slick-next:hover {
+  background: black;
+  color: #FFF;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 393px;
+  left: 47%;
+  margin-top: 10px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 12px !important;
+  padding: 10px;
+  color: gray;
+  transition: 0.4s linear;
+
+}
+
+.slick-prev:hover {
+  background: #000;
+
+}
