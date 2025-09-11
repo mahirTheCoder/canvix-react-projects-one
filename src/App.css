@@ -15,7 +15,7 @@ font-size: 12px !important;
 .slick-next {
   position: absolute;
   top: 393px;
-  left: 51%;
+  right: 46.5%;
   width: 44px;
   height: 44px;
   border: 1px solid gray;
@@ -35,7 +35,7 @@ font-size: 12px !important;
 .slick-prev {
   position: absolute;
   top: 393px;
-  left: 47%;
+  left: 46.5%;
   margin-top: 10px;
   width: 44px;
   height: 44px;

@@ -109,7 +109,7 @@ const Footer = () => {
                   type="text"
                   placeholder="Enter your email here"
                 />
-                <p className="w-[118px] lg:h-[47px] lg:text-base  text-xs h-9 bg-secondary text-primary rounded-md flex justify-center items-center mr-3">
+                <p className="w-[118px] lg:h-[47px] lg:text-base  text-xs h-9 bg-secondary text-primary lg:rounded-3xl rounded-md flex justify-center items-center mr-3">
                   Subscribe
                 </p>
               </div>
