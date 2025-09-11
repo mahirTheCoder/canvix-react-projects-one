@@ -9,11 +9,14 @@ const SliCanvix = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <IoIosArrowForward />,
     prevArrow: <IoIosArrowBack />,
+    autoplay: true,
+    touchMove: true ,
+
   };
 
   return (
