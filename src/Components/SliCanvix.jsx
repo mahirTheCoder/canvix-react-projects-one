@@ -1,21 +1,18 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
 import sliderImg from "../assets/images/sliderImg.png";
 
 const SliCanvix = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <IoIosArrowForward />,
-    prevArrow: <IoIosArrowBack />,
     autoplay: true,
     touchMove: true,
+    arrows: false,
   };
 
   return (

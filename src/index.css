@@ -1,12 +1,47 @@
 @import "tailwindcss";
+
 @utility container {
   margin-inline: auto;
 }
+
 @theme {
   --color-primary: #FBFBFB;
   --color-Brand: #64CCC5;
   --color-secondary: #0C0C0C;
   --font-dm: "DM Sans", sans-serif;
-  --font-roboto:  "Roboto Serif", serif;
+  --font-roboto: "Roboto Serif", serif;
 }
 
+/* MAIN DOT WRAPPER */
+.slick-dots {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+
+  position: absolute !important;
+  bottom: -50px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  list-style: none;
+}
+
+.slick-dots li button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 50%;
+  background-color: gray;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+  background-color: black;
+}
