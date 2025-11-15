@@ -115,7 +115,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <hr className="text-primary mb-7 "  />
+          <hr className="text-primary mb-7 " />
           <div className="footer2ndContent flex  gap-5 lg:gap-0 px-3 lg:px-0  lg:justify-between flex-wrap pb-7">
             <div className="copyRight">
               <h2 className="lg:text-xl text-base font-semibold font-roboto mb-2 lg:mb-6 text-white">

@@ -5,30 +5,29 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { GiCrossedAirFlows } from "react-icons/gi";
 
 const Responsive = () => {
-
   const navItems = [
-  {
-    navContent: 'Home',
-    navLink: '/',
+    {
+      navContent: "Home",
+      navLink: "/",
+    },
+    {
+      navContent: "About",
+      navLink: "/",
+    },
+    {
+      navContent: "Contact Us",
+      navLink: "/",
+    },
+  ];
 
-  },
-  {
-    navContent: 'About',
-    navLink: '/',
-
-  },
-  {
-    navContent: 'Contact Us',
-    navLink: '/'
-  }
-
-];
-
-const [shownav, setShowNav] = useState (false);
+  const [shownav, setShowNav] = useState(false);
 
   return (
     <>
-      <nav id="Responsive" className="lg:hidden px-2 py-3 absolute top-0 left-0 w-full z-20 ">
+      <nav
+        id="Responsive"
+        className="lg:hidden px-2 py-3 absolute top-0 left-0 w-full z-20 "
+      >
         <div className="container">
           <div className="responsiveRow flex items-center justify-between">
             <div className="reslogo ">
@@ -36,41 +35,50 @@ const [shownav, setShowNav] = useState (false);
                 <img src={logo} alt="logo" />
               </Link>
             </div>
-            <button onClick={()=>setShowNav(!shownav)} className="text-white text-2xl">
+            <button
+              onClick={() => setShowNav(!shownav)}
+              className="text-white text-2xl"
+            >
               <FaBarsStaggered />
             </button>
           </div>
         </div>
 
-        {
-          shownav&&
+        {shownav && (
+          <div
+            onClick={() => setShowNav(!shownav)}
+            className="sidetouch w-full h-screen absolute top-0 left-0"
+          ></div>
+        )}
 
-        <div  onClick={()=> setShowNav(!shownav)} className="sidetouch w-full h-screen absolute top-0 left-0"></div>
-        }
-
-        <div className={`w-[74%] h-screen bg-white fixed
-           top-0 right-0 ${shownav ? "translate-x-0": "translate-x-full"}  flex justify-center items-center duration-700`}>
+        <div
+          className={`w-[74%] h-screen bg-white fixed
+           top-0 right-0 ${
+             shownav ? "translate-x-0" : "translate-x-full"
+           }  flex justify-center items-center duration-700`}
+        >
           <div className="navitems flex flex-col gap-3">
-
-            <button onClick={()=> setShowNav(!shownav)}>
-            <GiCrossedAirFlows className="absolute top-5 right-7 text-lg text-[#000]" />
+            <button onClick={() => setShowNav(!shownav)}>
+              <GiCrossedAirFlows className="absolute top-5 right-7 text-lg text-[#000]" />
             </button>
 
-            {
-              navItems.map((item, k)=>(
-            <ul key={k}>
-              <li>
-                <Link className="text-lg font-dm text-black" to={item.navLink}>{item.navContent }</Link>
-              </li>
-            </ul>
-
-              ))
-            }
-            <Link className=' w-[130px] h-[40px] rounded-[10px] bg-black text-white text-sm normal font-dm flex justify-center items-center' >Get in touch</Link>
+            {navItems.map((item, k) => (
+              <ul key={k}>
+                <li>
+                  <Link
+                    className="text-lg font-dm text-black"
+                    to={item.navLink}
+                  >
+                    {item.navContent}
+                  </Link>
+                </li>
+              </ul>
+            ))}
+            <Link className=" w-[130px] h-[40px] rounded-[10px] bg-black text-white text-sm normal font-dm flex justify-center items-center">
+              Get in touch
+            </Link>
           </div>
         </div>
-
-
       </nav>
     </>
   );

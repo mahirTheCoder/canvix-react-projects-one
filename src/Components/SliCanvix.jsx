@@ -15,8 +15,7 @@ const SliCanvix = () => {
     nextArrow: <IoIosArrowForward />,
     prevArrow: <IoIosArrowBack />,
     autoplay: true,
-    touchMove: true ,
-
+    touchMove: true,
   };
 
   return (

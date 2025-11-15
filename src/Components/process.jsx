@@ -19,24 +19,32 @@ const Process = () => {
           </div>
           <div className="processContent flex lg:justify-between justify-center  flex-wrap mt-[90px] px-3 lg:px-0 lg:mb-[139px]">
             <Cardone
-              pIcon={<RiLightbulbFlashLine/>}
+              pIcon={<RiLightbulbFlashLine />}
               pHeader={"Ideate"}
-              Content={"The ideation process is a crucial phase in the design process where creative thinking and brainstorming"}
+              Content={
+                "The ideation process is a crucial phase in the design process where creative thinking and brainstorming"
+              }
             />
             <Cardone
-              pIcon={<IoIosMail/>}
+              pIcon={<IoIosMail />}
               pHeader={"Reserach"}
-              Content={"Research is a critical component of the design process, helping designers understand the problemv "}
+              Content={
+                "Research is a critical component of the design process, helping designers understand the problemv "
+              }
             />
             <Cardone
               pIcon={<TbAdjustmentsHorizontal />}
               pHeader={"Create"}
-              Content={"Designing a process involves several key steps to ensure clarity, efficiency, successful implementation"}
+              Content={
+                "Designing a process involves several key steps to ensure clarity, efficiency, successful implementation"
+              }
             />
             <Cardone
               pIcon={<SiTestcafe />}
               pHeader={"Testing"}
-              Content={"Testing is a crucial phase in the design process to ensure that the product or system meets the specified requirements"}
+              Content={
+                "Testing is a crucial phase in the design process to ensure that the product or system meets the specified requirements"
+              }
             />
           </div>
         </div>
